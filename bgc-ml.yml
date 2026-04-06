@@ -1,0 +1,26 @@
+name: bgc-ml
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.2
+  - pyg=2.5               # torch_geometric for GNNs
+  - fair-esm              # ESM-2 protein embeddings from Meta
+  - biopython=1.85        # from npomix; genome/sequence parsing
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy                 # from both envs
+  - networkx              # from npomix; graph data structures
+  - jupyter
+  - matplotlib
+  - seaborn
+  - tqdm
+  - wandb                 # experiment tracking
+  - pyyaml                # from both envs
+  - requests
+  - pip:
+    - torch-scatter
+    - torch-sparse
